@@ -1,0 +1,80 @@
+{
+  "source": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap",
+  "fetchedAt": "2026-10-24T20:09:12.350Z",
+  "fonts": [
+    {
+      "family": "Poppins",
+      "weight": "400",
+      "subset": "latin",
+      "file": "poppins-400-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2",
+      "bytes": 7884,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Poppins",
+      "weight": "500",
+      "subset": "latin",
+      "file": "poppins-500-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
+      "bytes": 7748,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Poppins",
+      "weight": "600",
+      "subset": "latin",
+      "file": "poppins-600-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
+      "bytes": 8000,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Poppins",
+      "weight": "700",
+      "subset": "latin",
+      "file": "poppins-700-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2",
+      "bytes": 7816,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Poppins",
+      "weight": "800",
+      "subset": "latin",
+      "file": "poppins-800-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2",
+      "bytes": 7824,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Sora",
+      "weight": "600",
+      "subset": "latin",
+      "file": "sora-600-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2",
+      "bytes": 25284,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Sora",
+      "weight": "700",
+      "subset": "latin",
+      "file": "sora-700-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2",
+      "bytes": 25284,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Sora",
+      "weight": "800",
+      "subset": "latin",
+      "file": "sora-800-latin.woff2",
+      "url": "https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2",
+      "bytes": 25284,
+      "license": "SIL Open Font License 1.1"
+    }
+  ],
+  "poppinsLicenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/OFL.txt",
+  "soraLicenseSource": "https://raw.githubusercontent.com/google/fonts/main/ofl/sora/OFL.txt"
+}

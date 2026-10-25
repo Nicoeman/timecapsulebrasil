@@ -1,0 +1,388 @@
+{
+  "source": "URLs explicitly supplied by the user in Texto colado.txt",
+  "usage": "Local reproduction of the requested Time Capsule Magazines adaptation for review.",
+  "licenseStatus": "not_verified",
+  "licenseNote": "The user provided these image URLs; this does not independently establish licensing or distribution rights. Confirmation is required before public commercial publication.",
+  "assets": [
+    {
+      "url": "https://i.ibb.co/27Q7sxgd/EUA-COMPLETO.webp",
+      "path": "/assets/EUA-COMPLETO.webp",
+      "width": 1000,
+      "height": 800,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 209804,
+      "sha256": "575a085b2da99c6669aa0b1279914200106d3b326e5909c9ac913f309520ab65"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/discover.webp",
+      "path": "/assets/discover.webp",
+      "width": 420,
+      "height": 551,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 95674,
+      "sha256": "4026ba3d418ba2d458be9d8f1801e75c8b2c3aa50d423806b6fb0e7c4c6d0837"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/wwemagazine-2_11zon.webp",
+      "path": "/assets/wwemagazine-2_11zon.webp",
+      "width": 713,
+      "height": 920,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 50878,
+      "sha256": "bfb3c85ab907f429861753907c39934fb36eaeea68547bbd47dc56f993a0be7c"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/eletronicgaming-3.webp",
+      "path": "/assets/eletronicgaming-3.webp",
+      "width": 370,
+      "height": 480,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 93782,
+      "sha256": "25bf5aea3c9f319a9060293a9a7299cd1373f7eb35c72faef4b655ea810a739b"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/bone-3.webp",
+      "path": "/assets/bone-3.webp",
+      "width": 650,
+      "height": 1000,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 103138,
+      "sha256": "a4bbaf8bbcfc4744a42cd447eecdef0d1baf6d8e9a2f0c4378f7a8753b1505d6"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/rollingstone-2.webp",
+      "path": "/assets/rollingstone-2.webp",
+      "width": 474,
+      "height": 579,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 77010,
+      "sha256": "8cfad78c498f96594ca0403c7ddd54ab4f176db299703794ff529a335fb65ca5"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/superman.webp",
+      "path": "/assets/superman.webp",
+      "width": 322,
+      "height": 500,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 93792,
+      "sha256": "1de534b9fa71cd5c87339cd1559b7707c9a1f3cf0067772e6205f099b558f580"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/playsation-magazine-2.webp",
+      "path": "/assets/playsation-magazine-2.webp",
+      "width": 736,
+      "height": 983,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 102862,
+      "sha256": "0a9657bf01fddd6337bfa8765b1ddd5470d90e667a3ef0b8b6b15e430cd581d8"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/populsar-sciencie-3.webp",
+      "path": "/assets/populsar-sciencie-3.webp",
+      "width": 300,
+      "height": 400,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 38790,
+      "sha256": "0c67d64b598a5bf6c06386a7f8501fd259a876b2b24c820a415a4e48e7194eb6"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/starlog-3.webp",
+      "path": "/assets/starlog-3.webp",
+      "width": 335,
+      "height": 450,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 60642,
+      "sha256": "2b1c825253b8389e2e7be15ca94e2a4a6ec76d0e1a9a6229dc7a13f34777907f"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/nintendo-3_11zon.webp",
+      "path": "/assets/nintendo-3_11zon.webp",
+      "width": 738,
+      "height": 968,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 69740,
+      "sha256": "2a3a583b6eae10a22b57ee9f9dd7fcb9f7f441e947b4c9f512bc4f81e8d21c3c"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/tipstricks_11zon.webp",
+      "path": "/assets/tipstricks_11zon.webp",
+      "width": 676,
+      "height": 921,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 60646,
+      "sha256": "a41f36fb00b20bf5151cf09a396d5bf2e050a0a9f31063bf8c6417648fe38cbc"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/SLAM_11zon.webp",
+      "path": "/assets/SLAM_11zon.webp",
+      "width": 1080,
+      "height": 1304,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 89892,
+      "sha256": "06a4526b04ab3d03d2d12db2cfdfa5120ed8bdc22930b3f09a67ab7d27a5bfba"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/national-lampoon-3_11zon.webp",
+      "path": "/assets/national-lampoon-3_11zon.webp",
+      "width": 618,
+      "height": 800,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 56038,
+      "sha256": "d9172ecf35618b35ef512fb1e2f95ab484dfd8fd1e076ba8ffdadcdfba18263c"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/xboxmgazine-2_11zon.webp",
+      "path": "/assets/xboxmgazine-2_11zon.webp",
+      "width": 1638,
+      "height": 1904,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 98974,
+      "sha256": "e65bbf59f55cfe51165b514bbc2a4d9cf401f11c15081fb38d799949be60b3fc"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/archie-3_11zon.webp",
+      "path": "/assets/archie-3_11zon.webp",
+      "width": 748,
+      "height": 1024,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 72774,
+      "sha256": "5d587acb36b33b2b3b2a3527cafab3704f075a0d3bb0b2de2231b56759093d7f"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/cracked-2_11zon.webp",
+      "path": "/assets/cracked-2_11zon.webp",
+      "width": 687,
+      "height": 960,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 73992,
+      "sha256": "faf47225c1c0f48f1dcde9c02f56d1dcba5410be3a86655861da9449fbeca829"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/hulk_11zon.webp",
+      "path": "/assets/hulk_11zon.webp",
+      "width": 804,
+      "height": 1192,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 72406,
+      "sha256": "4545c9884c33e61aa815344629d0d494b96395d0eb519dcd38cecbad42f791d2"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/flex_11zon.webp",
+      "path": "/assets/flex_11zon.webp",
+      "width": 437,
+      "height": 600,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 34618,
+      "sha256": "c8ca7403bfdebfd1759d055916043332a29e0f7f35c55be96abba378c6e9d956"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/TWD_11zon.webp",
+      "path": "/assets/TWD_11zon.webp",
+      "width": 585,
+      "height": 900,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 56990,
+      "sha256": "0b5607743f1992d0dad083a43897f9534a2c78ec51c7295cf465cd4f7762d7a6"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/spin-2_11zon.webp",
+      "path": "/assets/spin-2_11zon.webp",
+      "width": 1472,
+      "height": 1761,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 85610,
+      "sha256": "04311df99ce7ed955965d41bbf5016697393326ba0b698ebdc97134ea8e84050"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/dragon-3_11zon.webp",
+      "path": "/assets/dragon-3_11zon.webp",
+      "width": 592,
+      "height": 776,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 60806,
+      "sha256": "1e3fe59928c2e42b6f264adef58cff1df5c848b5ef0f9248c2b2e5dc9d5f7fbe"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/tartarugasninjas-2_11zon.webp",
+      "path": "/assets/tartarugasninjas-2_11zon.webp",
+      "width": 600,
+      "height": 816,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 72134,
+      "sha256": "9dc09efe8e619f1fda5346c435bcf0052215630d41699f61f8275f4d998c9f63"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/trasher-2_11zon.webp",
+      "path": "/assets/trasher-2_11zon.webp",
+      "width": 474,
+      "height": 636,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 35644,
+      "sha256": "593571facd97a74015f22f14aa233ec48f388c265b7527b1c0d95713c3010092"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/wizard-3_11zon.webp",
+      "path": "/assets/wizard-3_11zon.webp",
+      "width": 600,
+      "height": 889,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 54268,
+      "sha256": "6c2f33cf123776c9164b133b2c97738ec4410a0db71ac5be9df60ad9b2f1989c"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/gamepro-3_11zon.webp",
+      "path": "/assets/gamepro-3_11zon.webp",
+      "width": 912,
+      "height": 1196,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 93578,
+      "sha256": "07b33e046b3e149b88fe3dfa0256347b7e85bf8b562caf46cce6c8f764c7d639"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/hotrod-3_11zon.webp",
+      "path": "/assets/hotrod-3_11zon.webp",
+      "width": 757,
+      "height": 1024,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 59212,
+      "sha256": "1b8a48eddd03275790b4a287d7aa0705bf98961a078dc9775a0edace66ba16ed"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/vibe_11zon.webp",
+      "path": "/assets/vibe_11zon.webp",
+      "width": 900,
+      "height": 1200,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 39768,
+      "sha256": "22158499bf00857fe1963fa2c4c08ac10f6bcc9d5c6a266761d7a9dad5cdf59e"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/sportsilustratesd_11zon.webp",
+      "path": "/assets/sportsilustratesd_11zon.webp",
+      "width": 672,
+      "height": 900,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 48962,
+      "sha256": "e0c7e9ff681a889e9165f3da1a530b568c42600039282f265fbf99b3bfc1c18e"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/nickelodeonmagazine_11zon.webp",
+      "path": "/assets/nickelodeonmagazine_11zon.webp",
+      "width": 736,
+      "height": 987,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 76294,
+      "sha256": "fe979780f2da0eeb87705a703b1f82f980bde5dab27cc9b1d5374c63114164f3"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/mad_11zon.webp",
+      "path": "/assets/mad_11zon.webp",
+      "width": 900,
+      "height": 1169,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 82966,
+      "sha256": "418e45b5a17826a241ff96280441bc53c5f6796f57479f3b64702e2d23f35939"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/heavy-metal-3_11zon.webp",
+      "path": "/assets/heavy-metal-3_11zon.webp",
+      "width": 598,
+      "height": 800,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 34866,
+      "sha256": "bd2f3d9f768639526af84278840510e76a4c6ee5ab77df6dcdc79d4c859912d5"
+    },
+    {
+      "url": "https://espiritovivo.shop/wp-content/uploads/2026/04/disney-adventures_11zon.webp",
+      "path": "/assets/disney-adventures_11zon.webp",
+      "width": 625,
+      "height": 889,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 44994,
+      "sha256": "44085fc68f5f568a7c0c6b7e39be90c39fce84d5d7448c3e5b4d57ca72ceefc4"
+    },
+    {
+      "url": "https://i.ibb.co/ymnyhZhJ/Design-sem-nome-9.webp",
+      "path": "/assets/Design-sem-nome-9.webp",
+      "width": 500,
+      "height": 500,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 41992,
+      "sha256": "4d528a83641c33cfef29e79e361bed590e63df77483180517f33c5c7469c16c3"
+    },
+    {
+      "url": "https://i.ibb.co/wF8VgZTD/Design-sem-nome-10.webp",
+      "path": "/assets/Design-sem-nome-10.webp",
+      "width": 500,
+      "height": 500,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 33516,
+      "sha256": "aa6c4f25a0c6b07d3bf9c0b61388c406ab8c444438d0f0e3173f6fe3b41e7ff4"
+    },
+    {
+      "url": "https://i.ibb.co/0pS3xdJ6/Design-sem-nome-11.webp",
+      "path": "/assets/Design-sem-nome-11.webp",
+      "width": 500,
+      "height": 500,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 34632,
+      "sha256": "f92714f9205ac2d2afdb8cc64559e65002b6d5694d5906b1fc7f82f3b10549c3"
+    },
+    {
+      "url": "https://i.ibb.co/73svdjW/Design-sem-nome-12.webp",
+      "path": "/assets/Design-sem-nome-12.webp",
+      "width": 500,
+      "height": 500,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 44050,
+      "sha256": "00c53faafe3e18935881c4dd463c50b0538c5afc534e60522b693a86a280081a"
+    },
+    {
+      "url": "https://i.ibb.co/sv10cvQt/eua-bas.webp",
+      "path": "/assets/eua-bas.webp",
+      "width": 1000,
+      "height": 800,
+      "format": "WEBP",
+      "status": "ok",
+      "bytes": 186228,
+      "sha256": "c6e83f0d9c53669c38b9139f01912b7a9e071a547313e7ecca95e830e2642c1e"
+    }
+  ]
+}

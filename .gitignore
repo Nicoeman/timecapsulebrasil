@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.sites-cache/
+*.tsbuildinfo
+*.tar.gz
+.env
+.env.*
+!.env.example
+.vercel/
+.openai/
+*.log
