@@ -7,6 +7,33 @@ import './fonts.css';
 import './styles.css';
 
 type IconName = 'folder' | 'phone' | 'smile' | 'lock' | 'check' | 'cross' | 'arrow' | 'gift' | 'pause' | 'play';
+type MetaPixelFunction = ((...args: unknown[]) => void) & { callMethod?: (...args: unknown[]) => void; queue?: unknown[][]; push?: (...args: unknown[]) => void; loaded?: boolean; version?: string };
+type MetaWindow = Window & { fbq?: MetaPixelFunction; _fbq?: MetaPixelFunction; __timecapsulePixelInstalled?: boolean };
+function installMetaPixel() {
+  const w = window as MetaWindow;
+  if (w.__timecapsulePixelInstalled) return;
+  const fbq = ((...args: unknown[]) => {
+    if (fbq.callMethod) fbq.callMethod(...args);
+    else fbq.queue?.push(args);
+  }) as MetaPixelFunction;
+  fbq.push = (...args: unknown[]) => fbq.queue?.push(args);
+  fbq.loaded = true;
+  fbq.version = '2.0';
+  fbq.queue = [];
+  w.fbq = fbq;
+  w._fbq = fbq;
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+  document.head.appendChild(script);
+  fbq('init', '1017789413872986');
+  fbq('track', 'PageView');
+  w.__timecapsulePixelInstalled = true;
+}
+installMetaPixel();
+function trackMeta(event: string, parameters?: Record<string, unknown>) {
+  try { (window as MetaWindow).fbq?.('track', event, parameters); } catch { /* Tracking must never block the page. */ }
+}
 function Icon({ name, className = '' }: { name: IconName; className?: string }) {
   const paths: Record<IconName, React.ReactNode> = {
     folder: <><path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M3 9h18"/></>,
@@ -144,7 +171,9 @@ function PriceCard({ complete, now }: { complete?: boolean; now: number }) {
     if (!getCheckoutAvailability(OFFER, plan, Date.now()).available || !checkout) { setNotice(true); return; }
     navigating.current = true;
     // Only an intent event. The payment provider must confirm and deduplicate purchases.
-    window.dispatchEvent(new CustomEvent('timecapsule:checkout', { detail: { plan, currency: 'BRL', value: complete ? 19.9 : 10 } }));
+    const value = complete ? 19.9 : 10;
+    trackMeta('InitiateCheckout', { content_name: 'Time Capsule Magazines Brasil', currency: 'BRL', value });
+    window.dispatchEvent(new CustomEvent('timecapsule:checkout', { detail: { plan, currency: 'BRL', value } }));
     window.location.assign(checkout);
   };
   return <article className={`price-card ${complete ? 'complete' : 'basic'}`} aria-labelledby={`${plan}-name`}>
@@ -187,6 +216,12 @@ function Footer() { return <footer><div className="footer-grid container grid md
 
 function App() {
   const [now, setNow] = useState(Date.now());
+  useEffect(() => {
+    const w = window as MetaWindow & { __timecapsuleViewContentTracked?: boolean };
+    if (w.__timecapsuleViewContentTracked) return;
+    w.__timecapsuleViewContentTracked = true;
+    trackMeta('ViewContent', { content_name: 'Time Capsule Magazines Brasil', content_type: 'product', currency: 'BRL', value: 10.00 });
+  }, []);
   useEffect(() => { const interval = window.setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(interval); }, []);
   return <><a className="skip-link" href="#main">Ir para o conteúdo</a><OfferBar now={now}/><main id="main"><section className="hero container text-center"><h1>Sua época favorita está de volta com mais de <span className="coral">10.000 revistas clássicas.</span></h1><Image src={full} alt="Coleção Time Capsule Magazines: revistas clássicas organizadas em computador, tablet e celular" priority className="hero-image"/><p className="hero-description">Tenha acesso a milhares de revistas digitalizadas e organizadas — Playboy, MAD Magazine, Archie, Sports Illustrated, WWF Magazine, Nintendo Power, Muscle &amp; Fitness, Popular Science, Hot Rod, Cracked e muito mais.</p><CTA>QUERO REVIVER MINHA INFÂNCIA</CTA><SecureNote/>{!OFFER.salesEnabled && <p className="review-note">Prévia para revisão • Vendas ainda não abertas</p>}</section>
     <Gallery/><Benefits/><section className="trust section container text-center"><h2>Pronto para fazer uma viagem no tempo?</h2><p>O que você está esperando?</p><CTA>QUERO PARTICIPAR AGORA</CTA><SecureNote/></section><Deliverable/><Bonuses/>
@@ -194,3 +229,4 @@ function App() {
   </main><Footer/></>;
 }
 createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);
+
