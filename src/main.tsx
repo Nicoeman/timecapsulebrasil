@@ -155,8 +155,9 @@ function Deliverable() { return <section className="deliverable section containe
 
 function Bonuses() { return <><section className="bonus-intro container"><div className="down-arrows"><Icon name="arrow"/><Icon name="arrow"/><Icon name="arrow"/></div><p>E não é só isso...</p><h2 className="coral">Tem muito mais!</h2><p className="bonus-subtitle">Você também vai receber <strong>4 bônus exclusivos:</strong></p><small>Incluídos no Pacote Completo</small></section><section className="bonuses container" aria-label="Os quatro bônus do Pacote Completo"><div className="bonus-grid grid sm:grid-cols-3">{bonuses.map((bonus, index) => <article className="bonus-card" key={bonus.image}><Image src={bonus.image} alt={`Mockup do bônus ${index + 1}: ${bonus.title}`} square className="bonus-image"/><span className="tag bonus-tag">BÔNUS 0{index + 1}</span><h3>{bonus.title}</h3><p>{bonus.description}</p></article>)}</div></section></>; }
 
-function PriceCard({ complete, now }: { complete?: boolean; now: number }) {
-  const plan = complete ? 'complete' : 'basic';
+function PriceCard({ now }: { now: number }) {
+  const complete = true;
+  const plan = 'basic';
   const availability = getCheckoutAvailability(OFFER, plan, now);
   const checkout = buildCheckoutUrl(OFFER.checkout[plan], window.location.search);
   const [notice, setNotice] = useState(false);
@@ -171,19 +172,19 @@ function PriceCard({ complete, now }: { complete?: boolean; now: number }) {
     if (!getCheckoutAvailability(OFFER, plan, Date.now()).available || !checkout) { setNotice(true); return; }
     navigating.current = true;
     // Only an intent event. The payment provider must confirm and deduplicate purchases.
-    const value = complete ? 19.9 : 10;
+    const value = 10;
     trackMeta('InitiateCheckout', { content_name: 'Time Capsule Magazines Brasil', currency: 'BRL', value });
     window.dispatchEvent(new CustomEvent('timecapsule:checkout', { detail: { plan, currency: 'BRL', value } }));
     window.location.assign(checkout);
   };
   return <article className={`price-card ${complete ? 'complete' : 'basic'}`} aria-labelledby={`${plan}-name`}>
-    {complete && <div className="complete-ribbon">TODOS OS BÔNUS INCLUÍDOS</div>}
+    {complete && <div className="complete-ribbon">OFERTA ÚNICA • TODOS OS BÔNUS INCLUÍDOS</div>}
     <h3 id={`${plan}-name`}>Pacote {complete ? 'Completo' : 'Básico'}</h3>
     <Image src={complete ? full : '/assets/eua-bas.webp'} alt={`Conteúdo do Pacote ${complete ? 'Completo' : 'Básico'}`} className="price-image" />
     <ul className="checklist price-list"><Checklist>Mais de 10.000 revistas clássicas.</Checklist><Checklist>{OFFER.lifetimeAccessConfirmed ? (complete && OFFER.immediateAccessConfirmed ? 'Acesso digital imediato e vitalício.' : 'Acesso vitalício com pagamento único.') : 'Acesso digital com pagamento único.'}</Checklist><Checklist>Compatível com celular, tablet ou computador.</Checklist>{complete && OFFER.weeklyUpdatesConfirmed && <Checklist>Atualizações semanais com novas revistas.</Checklist>}
       {['70.000 quadrinhos digitalizados.', 'Saga completa de Star Wars.', 'Super Pacote Adulto (+18).', 'Revistas clássicas de videogames.'].map(item => <Checklist key={item} excluded={!complete} gift={complete}>{item}</Checklist>)}
     </ul>
-    <div className="price-bottom"><p className="price"><span>R$</span> {complete ? '19,90' : '10,00'}</p><p className="single-payment">Pagamento único</p>
+    <div className="price-bottom"><p className="price"><span>R$</span> 10,00</p><p className="single-payment">Pagamento único • Pacote completo + 4 bônus</p>
     <button className={`button ${complete ? 'primary' : 'secondary'}${availability.available ? ' checkout-pulse' : ''}`} onClick={buy} aria-disabled={!availability.available} aria-describedby={`${plan}-status`}>{complete ? 'DESBLOQUEAR MEU PACOTE COMPLETO' : 'COMPRAR PACOTE BÁSICO'}</button>
     <p className="checkout-status" id={`${plan}-status`} role={notice ? 'status' : undefined}>{availability.available ? (complete ? 'Pagamento único • Acesso digital' : 'Você também pode aproveitar nossa oferta completa.') : getCampaignState(OFFER.campaign, now).status === 'expired' ? 'Campanha encerrada. Compras indisponíveis.' : 'Em preparação. Compras ainda indisponíveis.'}</p>
     {notice && <p className="purchase-notice" role="status">A oferta está em preparação. O pagamento será liberado quando as condições e o checkout estiverem disponíveis.</p>}
@@ -225,7 +226,7 @@ function App() {
   useEffect(() => { const interval = window.setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(interval); }, []);
   return <><a className="skip-link" href="#main">Ir para o conteúdo</a><OfferBar now={now}/><main id="main"><section className="hero container text-center"><h1>Sua época favorita está de volta com mais de <span className="coral">10.000 revistas clássicas.</span></h1><Image src={full} alt="Coleção Time Capsule Magazines: revistas clássicas organizadas em computador, tablet e celular" priority className="hero-image"/><p className="hero-description">Tenha acesso a milhares de revistas digitalizadas e organizadas — Playboy, MAD Magazine, Archie, Sports Illustrated, WWF Magazine, Nintendo Power, Muscle &amp; Fitness, Popular Science, Hot Rod, Cracked e muito mais.</p><CTA>QUERO REVIVER MINHA INFÂNCIA</CTA><SecureNote/>{!OFFER.salesEnabled && <p className="review-note">Prévia para revisão • Vendas ainda não abertas</p>}</section>
     <Gallery/><Benefits/><section className="trust section container text-center"><h2>Pronto para fazer uma viagem no tempo?</h2><p>O que você está esperando?</p><CTA>QUERO PARTICIPAR AGORA</CTA><SecureNote/></section><Deliverable/><Bonuses/>
-    <section className="pricing section container" id="pricing"><h2>Escolha o pacote ideal para você</h2><div className="pricing-grid grid md:grid-cols-2"><PriceCard now={now}/><PriceCard complete now={now}/></div></section><Guarantee/><FAQ/>
+    <section className="pricing section container" id="pricing"><h2>Pacote completo + todos os bônus por <span className="green">R$ 10,00</span></h2><div className="pricing-grid pricing-single grid"><PriceCard now={now}/></div></section><Guarantee/><FAQ/>
   </main><Footer/></>;
 }
 createRoot(document.getElementById('root')!).render(<React.StrictMode><App/></React.StrictMode>);

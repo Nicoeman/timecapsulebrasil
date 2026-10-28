@@ -50,5 +50,10 @@ footer{background:#0f172a;color:#cbd5e1;padding-top:44px;padding-bottom:22px}.fo
 @media(prefers-reduced-motion:reduce) {
   .price-card .checkout-pulse { animation:none;transform:none;will-change:auto; }
 }
+.pricing-single{max-width:560px;grid-template-columns:minmax(0,1fr)}
+.pricing-single .price-card.complete{border-width:3px;box-shadow:0 12px 36px #15803d24;background:linear-gradient(180deg,#f0fdf4 0%,#fff 35%)}
+.pricing-single .complete-ribbon{left:-3px;right:-3px;font-weight:700}
+.pricing-single .price{font-size:clamp(60px,8vw,80px);margin-top:8px}
 /* Account for the browser scrollbar at the requested 320px breakpoint. */
 @media(max-width:320px) { body { min-width:0; } }
+
